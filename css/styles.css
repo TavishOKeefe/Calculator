@@ -5,9 +5,14 @@
 }
 
 form {
-  margin-top: 3em;
+  width: 50%;
+  margin-top: 3em auto 0;
 }
 
 #output {
   margin-top: 5em;
+}
+
+input {
+  width: 20px;
 }

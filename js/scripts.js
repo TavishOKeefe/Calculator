@@ -5,6 +5,8 @@ var add = function(number1, number2) {
 };
 
 var subtract = function(number1, number2) {
+  console.log(number1);
+  console.log(number2);
   return number1 - number2;
 };
 
@@ -19,6 +21,7 @@ var divide = function(number1, number2) {
 // Everything below this line is user interface (or front-end) logic:
 
 $(document).ready(function() {
+
   // ADD
   $("form#add").submit(function(event) {
     event.preventDefault();
@@ -34,9 +37,11 @@ $(document).ready(function() {
   $("form#subtract").submit(function(event) {
     event.preventDefault();
 
-    var number1 = parseInt($("#subract1").val());
-    var number2 = parseInt($("#subract2").val());
-
+    var number1 = parseInt($("#subtract1").val());
+    var number2 = parseInt($("#subtract2").val());
+    console.log(number1);
+    console.log(number2);
+    debugger
     var result = subtract(number1, number2);
     $("#output").text(result);
   });
