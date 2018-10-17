@@ -1,0 +1,13 @@
+.btn {
+  border: 3px solid #000;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+form {
+  margin-top: 3em;
+}
+
+#output {
+  margin-top: 5em;
+}
